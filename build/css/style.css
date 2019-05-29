@@ -863,7 +863,6 @@ h1, h2, h3, h4, h5,
 .swiper-title-custom {
     position:absolute;
     top:88%;
-    left: 3%;
     width:85%;
     height:12%;
     font-size: 1.4em;
@@ -882,10 +881,11 @@ h1, h2, h3, h4, h5,
 .marquee p {
     display: inline-block;
     animation: marquee 30s linear infinite;
+    padding-left: 100%;
 }
 @keyframes marquee {
-    0%   { transform: translate(-100%, 0); }
-    100% { transform: translate(200%, 0); }
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
 }
 
 /*footer*/
