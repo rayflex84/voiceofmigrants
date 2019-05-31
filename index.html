@@ -175,61 +175,9 @@
 
 <script src="build/runtime.js"></script>
 <script src="build/vendors_app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
-<script src="build/js/main.js"></script>
-            
-        <script>
-
-          $(function () {
-            
-              // $('.site-menu-toggle').bind('click', function (event) {
-                //alert('ready');
-            //     var $anchor = $(this);
-            //     /*
-            //     if you want to use one of the easing effects:
-            //     $('html, body').stop().animate({
-            //         scrollLeft: $($anchor.attr('href')).offset().left
-            //     }, 1500,'easeInOutExpo');
-            //      */
-            //     $('html, body').stop().animate({
-            //       scrollLeft: $($anchor.attr('href')).offset().left
-            //     }, 1000);
-            //     event.preventDefault();
-            // window.scroll(5000, 0);
-            //    });
-            //var config = require('./build/js/main.js')
-
-            // Your web app's Firebase configuration
-            var firebaseConfig = {
-              apiKey: "AIzaSyC4_AZaq4Xhd5E6U6ylynxSRrDZCzoO8cs",
-              authDomain: "voice-of-migrants.firebaseapp.com",
-              databaseURL: "https://voice-of-migrants.firebaseio.com",
-              projectId: "voice-of-migrants",
-              storageBucket: "voice-of-migrants.appspot.com",
-              messagingSenderId: "438475466844",
-              appId: "1:438475466844:web:492714732f77d58e"
-            };
-            
-            var app = firebase.initializeApp(firebaseConfig);
-            var db = firebase.firestore(app);
-
-              db.collection("username").get().then(function (querySnapshot) {
-              querySnapshot.forEach(function (doc) {
-                // doc.data() is never undefined for query doc snapshots
-                alert(doc.id + " => " + doc.data()['value']);
-              });
-            });
-
-            });
-
-          // $(document).ready(function () {
-          //   alert('ready');
-          // });
-
-        </script>
-            
-        
+//<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+//<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
+<script src="build/js/main.js"></script>  
 
 </body>
 
